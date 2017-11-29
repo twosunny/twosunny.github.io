@@ -9,7 +9,7 @@ exclude:
   - "/vendor/"
 
 # Site settings
-title: Twosunny's Tech Blog
+title: Twosunny's DevOps
 subtitle: "DevOps"
 email: singwoosun@gmail.com
 name: Woosun
@@ -41,18 +41,18 @@ jekyll-archives:
     tag: '/tag/:name/'
 
 # Disqus comments
-# disqus_shortname: bencentra
+#disqus_shortname: twosunny
 
 # Google analytics
-# ga_tracking_id: "UA-XXXX-1"
+ga_tracking_id: "UA-110118680-1"
 
 # Category descriptions (for archive pages)
-descriptions:
-  - cat: jekyll
-    desc: "Posts describing Jekyll setup techniques."
+#descriptions:
+#  - cat: jekyll
+#    desc: "Posts describing Jekyll setup techniques."
 
-  - cat: dummy
-    desc: "Just some placeholder posts, lorem ipsum and the rest."
+#  - cat: dummy
+#    desc: "Just some placeholder posts, lorem ipsum and the rest."
 
 # Social icons and sharing options
 #
@@ -70,19 +70,19 @@ descriptions:
 #     desc: Follow me on Twitter            # Description to display as link title, etc
 #     share: true                           # Include in the "Share" section of posts
 social:
-#  - name: Twitter
-#    icon: twitter
-#    username: TheBenCentra
-#    url: https://twitter.com/TheBenCentra
-#    desc: Follow me on Twitter
-#    share: true
+  - name: Twitter
+    icon: twitter
+    username: 
+    url: 
+    desc: 
+    share: true
 
-#  - name: Facebook
-#    icon: facebook
-#    username: thebencentra
-#    url:
-#    desc: Friend me on Facebook
-#    share: true
+  - name: Facebook
+    icon: facebook
+    username: 
+    url:
+    desc: 
+    share: true
 
   - name: GitHub
     icon: github
@@ -187,12 +187,12 @@ social:
 # OS Protocol is for sharing the source of your site, if you're interested. For more, see osprotocol.com
 protocols:
     fb_image: "/assets/logo.png"
-    fb_image_width: 612
-    fb_image_height: 605
+    fb_image_width: 318
+    fb_image_height: 181
     fb_image_type: "image/png"
 
     twitter_image: "/assets/logo.png"
 
- #   os_repo: "https://github.com/bencentra/centrarium.com"
- #   os_rcs_type: "git"
- #   os_src: "git@github.com:bencentra/centrarium.com.git"
+#    os_repo: "https://github.com/bencentra/centrarium.com"
+#    os_rcs_type: "git"
+#    os_src: "git@github.com:bencentra/centrarium.com.git"
