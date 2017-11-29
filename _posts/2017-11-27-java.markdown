@@ -51,7 +51,7 @@ public BufferedImage getImage(String filePath) throws IOException{
 {% endhighlight %}
 > 성능 측정 결과
 
-> <img src="/assets/images/2017/read_normal.png" style="width:100%;height:100%;">
+> <a href="/assets/images/2017/read_normal.png" data-lightbox="image"><img src="/assets/images/2017/read_normal.png" style="width:100%;height:100%;"></a>
 
 * [Java NIO](https://docs.oracle.com/javase/tutorial/essential/io/fileio.html) 로 로딩  
 {% highlight java %}
@@ -79,7 +79,7 @@ public BufferedImage getImageByNio(String filePath) throws IOException {
 {% endhighlight %}
 > 성능 측정 결과
 
-> <img src="/assets/images/2017/read_nio.png" style="width:100%;height:100%;">
+> <a href="/assets/images/2017/read_nio.png" data-lightbox="image"><img src="/assets/images/2017/read_nio.png" style="width:100%;height:100%;"></a>
 
 * BufferedInputStream 로 로딩  
 {% highlight java %}
@@ -105,7 +105,7 @@ public BufferedImage getImageByBuffered(String filePath) throws IOException {
 {% endhighlight %}
 > 성능 측정 결과
 
-> <img src="/assets/images/2017/read_buffered.png" style="width:100%;height:100%;">
+> <a href="/assets/images/2017/read_buffered.png" data-lightbox="image"><img src="/assets/images/2017/read_buffered.png" style="width:100%;height:100%;"></a>
 
   
 약간의 차이가 있긴 하지만, 어떤 방식이던간에 이미지 데이터 자체를 로딩하고, [ImageIO][ImageIO]를 통해 `BufferedImage`를 만드는 속도 차이는 피부로 느낄만한 수준이 아니다.
@@ -181,7 +181,7 @@ public void writeImage(OutputStream outputStream, BufferedImage image) throws IO
 
 > 성능 측정 결과
 
-> <img src="/assets/images/2017/write_imageio.png" style="width:100%;height:100%;">
+> <a href="/assets/images/2017/write_imageio.png" data-lightbox="image"><img src="/assets/images/2017/write_imageio.png" style="width:100%;height:100%;"></a>
 
  * [JDeli PngEncoder](https://www.idrsolutions.com/jdeli)
  {% highlight java %}
@@ -204,7 +204,7 @@ public void writeImage(OutputStream outputStream, BufferedImage image) throws IO
 
 > 성능 측정 결과
 
-> <img src="/assets/images/2017/write_jdeli.png" style="width:100%;height:100%;">
+> <a href="/assets/images/2017/write_jdeli.png" data-lightbox="image"><img src="/assets/images/2017/write_jdeli.png" style="width:100%;height:100%;"></a>
 
  * [objectplanet PngEncoder](http://objectplanet.com/pngencoder/)
  {% highlight java %}
@@ -229,7 +229,7 @@ public void writeImage(OutputStream outputStream, BufferedImage image) throws IO
 
 > 성능 측정 결과
 
-> <img src="/assets/images/2017/write_object.png" style="width:100%;height:100%;">
+> <a href="/assets/images/2017/write_object.png" data-lightbox="image"><img src="/assets/images/2017/write_object.png" style="width:100%;height:100%;"></a>
 
 `BufferedImage`를 png로 인코딩 시키는데 있어서, 어떠한 라이브러리를 쓰는지에 따라서 **굉장한 차이**가 나는것을 볼수 있다. 적어도 Java에서 image를 생성하여 실시간 서비스를 하기 위해서는, [ImageIO][ImageIO]로 png를 생성하는 부분은 피하는게 
 좋을것 같다.
